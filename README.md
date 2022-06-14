@@ -10,7 +10,7 @@ This is the PyTorch implementation of the FBMSNet architecture for EEG-MI classi
 
 FBMSNet consists of four blocks, (1) a temporal convolution block, (2) a spatial convolution block, (3) a temporal log-variance block, and (4) a fully connected layer for classification. The first block is designed to learn the multiscale temporal information from the multiview EEG representations, and the second block aims to learn the spatial information from each temporal feature map. Subsequently, the third block computes the temporal variance of each time series. Finally, all representations are flattened and fed to the fully connected layer with softmax as the activation function. An overview of FBMSNet is depicted in Fig. 1.
 
-Furthermore, to distinguish similar categories in a better way and decrease the influence of interclass dispersion and within-class variance, we not only minimize the CE loss function but also introduce the center loss function. With this joint supervision, FBMSNet is capable of learning deep features with two key learning objectives as much as possible, interclass separability and intraclass compactness as much as possible, which are crucial to MI recognition
+Furthermore, to distinguish similar categories in a better way and decrease the influence of interclass dispersion and within-class variance, we not only minimize the cross entropy (CE) loss function but also introduce the center loss function. With this joint supervision, FBMSNet is capable of learning deep features with two key learning objectives as much as possible, interclass separability and intraclass compactness as much as possible, which are crucial to MI recognition
 
 ## How to use
 

@@ -22,6 +22,12 @@ The classification results for FBMSNet and other competing architectures are as 
 
 ![results](results.png)
 
+## Cite:
+If you find this architecture or toolbox useful then please cite this paper:
+
+Liu, Ke and Yang, Mingzhao and Yu, Zhuliang and Wang, Guoyin and Wu, Wei. FBMSNet: A Filter-Bank Multi-Scale Convolutional Neural Network for EEG-Based Motor Imagery Decoding. IEEE Transactions on Biomedical Engineering, 70(2):436–445, 2023.
+
+
 ## References:
 
 *Ravikiran Mane, Effie Chew, Karen Chua, Kai Keng Ang, Neethu Robinson, A.P. Vinod, Seong-Whan Lee, and Cuntai Guan, **"FBCNet: An Efficient Multi-view Convolutional Neural Network for Brain-Computer Interface,"** arXiv preprint arXiv:2104.01233 (2021) https://arxiv.org/abs/2104.01233*

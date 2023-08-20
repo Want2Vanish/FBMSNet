@@ -14,14 +14,16 @@ Furthermore, to distinguish similar categories in a better way and decrease the 
 
 ## How to use
 If you want to reproduce the experimental results reported in the paper, make sure you use the same runtime environment.
+
 The package requirements to run all the codes are provided in file env.txt. The complete instructions for utilising this toolbox are provided in instructions.txt.
 
 All the codes have been tested to work using a virtual environment mentioned in the env.txt file. 
 1. Create a new virtual environment named "env_fbmsnet" with python3.7 using Anaconda3 and activate it：
-```
+
+```{
 conda create --name env_fbmsnet python=3.7
 conda activate env_fbmsnet
-```
+}```
 
 3. Install virtualenv package:
 ```

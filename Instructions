@@ -1,29 +1,37 @@
-Instructions to Run FBCNet on Korea University and BCI competition IV-2a dataset. 
-These instructions have been tested on Ubuntu system. They should work for other platforms with appropriate modifications.  
+Instructions to Run FBMSNet on Korea University and BCI competition IV-2a dataset. 
+These instructions have been tested on windows10 system. They should work for other platforms with appropriate modifications.  
 
 Step 1: Set-up a virtual environment
 -----------------------------------------------------------------------------------------------------------------------
-All the codes have been tested to work using a virtual environment mentioned in the req.txt file. 
-1. Install python3 and python3 dev packages (dev packages are extreemly important):
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-sudo apt-get install python3.7
-sudo apt-get install python-dev python3.7-dev \
-     build-essential libssl-dev libffi-dev \
-     libxml2-dev libxslt1-dev zlib1g-dev \
-     python-pip
+All the codes have been tested to work using a virtual environment mentioned in the env.txt file. 
+1. Create a new virtual environment named "env_fbmsnet" with python3.7 using Anaconda3 and activate it：
+conda create --name env_fbmsnet python=3.7
+conda activate env_fbmsnet
 
-1. Install virtualenv package:
-sudo apt-get install virtualenv 
+2. Install virtualenv package:
+conda install -c anaconda ujson=1.35
+pip install -U scikit-learn
+pip install pandas -i
+pip install matplotlib
+pip install torchsummary
+pip install resampy
+pip install seaborn
+pip install pygame
+pip install selenium
 
-2. Create a new virtual environment with python3.7: fbcnetEnv
-cd FBCNetToolbox
-virtualenv fbcnetEnv -p python3.7
+3. Change the current working path to the path where you have stored env.txt. Install required packages.
+E: 
+pip install -r env.txt
 
-3. load the virtualenv and install required packages
-source fbcnetEnv/bin/activate 
-pip install -r req.txt
+4. Download the offline installation files for torch and torchvision from the following link: https://download.pytorch.org/whl/torch_stable.html, Use the "Ctrl + F" command to search for the installation files of the specified version of torch and torchvision and download it. It is recommended to store them under the same path as env.txt.
+torch version : torch-1.3.1-cp37-cp37m-win_amd64
+torchvision version : torchvision-0.4.2-cp37-cp37m-win_amd64
 
+5. When you have finished downloading, use the pip command to install them.
+pip install torch-1.3.1-cp37-cp37m-win_amd64.whl
+pip install torchvision-0.4.2-cp37-cp37m-win_amd64.whl
+
+Congratulations, you have completed all the steps to create the virtual environment needed to run the source code!
 
 Step 2: Get the data
 -------------------------------------------------------------------------------------------------------------------------

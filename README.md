@@ -18,11 +18,14 @@ The package requirements to run all the codes are provided in file env.txt. The 
 
 All the codes have been tested to work using a virtual environment mentioned in the env.txt file. 
 1. Create a new virtual environment named "env_fbmsnet" with python3.7 using Anaconda3 and activate it：
-```conda create --name env_fbmsnet python=3.7```
-```conda activate env_fbmsnet```
+```
+conda create --name env_fbmsnet python=3.7
+conda activate env_fbmsnet
+```
 
-2. Install virtualenv package:
-```conda install -c anaconda ujson=1.35
+3. Install virtualenv package:
+```
+conda install -c anaconda ujson=1.35
 pip install -U scikit-learn
 pip install pandas -i
 pip install matplotlib
@@ -30,7 +33,8 @@ pip install torchsummary
 pip install resampy
 pip install seaborn
 pip install pygame
-pip install selenium```
+pip install selenium
+```
 
 3. Change the current working path to the path where you have stored env.txt. Install required packages.
 > E: 
